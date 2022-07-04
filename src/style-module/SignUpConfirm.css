@@ -1,0 +1,26 @@
+.signupConfirm{
+    position: fixed;
+    top: -110%;
+    left:0; 
+    height: 100%;
+    width:100%;
+    z-index: 3;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+}
+.signupConfirmshow{
+    top: 0;
+}
+.signupConfirm .modal-box img{
+    width: 90px;
+    margin-bottom: .8em;
+}
+.signupConfirm .modal-box .checkIcon{
+    color: #19be19;
+    font-size: 4em;
+}
+.signupConfirm .modal-box .btn{
+    background-color: #000;
+    color: #FFFFFF;
+
+}

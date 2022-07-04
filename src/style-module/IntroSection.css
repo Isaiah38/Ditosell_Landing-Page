@@ -1,0 +1,134 @@
+.head-container{
+    display: flex;
+    align-items: center;
+    padding: 1em 1em 2em;
+    max-height: min-content;
+    color: #FFFFFF;
+}
+.head-content{
+    width: 100%;
+    flex:0 1 40em;
+    padding: 5% 0 0 5%;
+}
+.head-content div a img{
+    width: 9em;
+}
+.head-content h1{
+    font-size: 2.5em;
+    margin-bottom: 3%;
+}
+.head-content .pp{
+    font-size: 1em;
+    line-height: 1.5;
+    width: 500px;
+    float: left;
+}
+.section-writeup{
+    color: #FFFFFF;
+}
+.image{
+    width: 80%;
+    flex: 0 1 40em;
+    padding: 0 5% 0 0;
+}
+.image img{
+    width: 100%;
+}
+ .comingSoon{
+    margin-bottom: -2.5em;
+    margin-top: 5em;
+ }
+.download-container{
+    display: grid;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 150px;
+    justify-content: left;
+}
+.download-container .Applestore{
+    margin-top: -5em;
+    
+}
+.link-wrapper{
+    float: left;
+    display: inline-flex;
+    margin-right: -20em;
+    font-size: .9em;
+    display: none;
+}
+.link-wrapper a{
+    padding: .6em .5em .3em;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    color: #000000;
+    margin-right: 10px;
+}
+.email{
+    margin-top: 2em;
+}
+.email p a{
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+/*------------------------Join waitlist--------------------------*/
+.modal-background{
+    position: fixed;
+    top: -110%;
+    left:0; 
+    height: 100%;
+    width:100%;
+    z-index: 3;
+    background: rgba(0, 0, 0, 0.8);
+}
+#joinjoin{
+    top: 0;
+}
+.modal-box{
+    width: 30%;
+    margin: 10% auto;
+    background-color: #FFFFFF;
+    padding: 2em 2em 3em;
+    color: #000000;
+    text-align: center;
+    border-radius: 10px;
+}
+.modal-box input{
+    display: block;
+    box-sizing: border-box;
+    height: 2em;
+    width: 100%;
+    font-family: inherit;
+    background-color: #f1dbdb
+}
+.modal-box input{
+    display: block;
+    box-sizing: border-box;
+    height: 3em;
+    border-radius: 10px;
+    margin-top: 1.5em;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 0 2%;
+    width: 100%;
+}
+#join h3{
+    margin: 2em 0; 
+}
+#join .btn{
+    background-color: #000000;
+    color: #FFFFFF;
+    margin-top: 2em;
+}
+.close{
+    cursor: pointer;
+    float: right;
+}
+.error{
+    color: red;
+}
+.correct{
+    color: green;
+}
+/*-------------------------*/
