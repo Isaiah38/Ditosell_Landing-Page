@@ -1,0 +1,55 @@
+.modal-background{
+    position: fixed;
+    top: -110%;
+    left:0; 
+    height: 100%;
+    width:100%;
+    z-index: 3;
+    background: rgba(0, 0, 0, 0.8);
+}
+#joinjoin{
+    top: 0;
+}
+.modal-box{
+    width: 400px;
+    margin: 10% auto;
+    background-color: #FFFFFF;
+    padding: 2em 2em 3em;
+    color: #000000;
+    text-align: center;
+    border-radius: 10px;
+}
+.modal-box input{
+    display: block;
+    box-sizing: border-box;
+    height: 35px;
+    width: 100%;
+    font-family: inherit;
+    border-radius: 6px;
+    margin-top: 1.5em;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 10px 15px;
+
+}
+
+#join h3{
+    margin: 2em 0; 
+}
+#join .btn{
+    background-color: #000000;
+    color: #FFFFFF;
+    margin-top: 2em;
+}
+.close{
+    cursor: pointer;
+    float: right;
+}
+
+/*-------------media queries-----------*/
+@media only screen and (max-width: 360px){
+
+    .modal-box{
+        width: 300px;
+    }
+}

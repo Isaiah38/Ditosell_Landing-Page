@@ -5,25 +5,26 @@ import React, {useState} from 'react';
 
 
 function IntroSection(){
-    const [isJoin, setIsJoin] = useState(false);
+    const [waitList, setWaitList] = useState(false);
+    function joinWaitList(){
+        setWaitList(true);
+    }
     return(
         <section>
-            <div class="head-container">
-            <div class="head-content">
-                <h1>Limitless locations, unimaginable speed</h1> 
-                <p className='pp'>Be part of the story and subscribe to our newsletter for news and updates about our platform.</p>
-                <button className='btn joinbtn'onClick={() => setIsJoin(!isJoin)}>Join Waitlist</button>
-                
-                    
-                    <SignUp name={isJoin ?'joinjoin': ''} closeSign={setIsJoin}/>
-            </div>
-            <div class="image">
-                <img src={Phone} alt=''/>
-            </div>
+            {waitList && <SignUp show = {waitList ? 'joinjoin':''} closeSign={setWaitList}/>}
+            <div className='intro-wrapper'>
+                <div className='intro-content'>
+                    <h1>Limitless locations, unimaginable speed</h1>
+                    <p>Be part of the story and subscribe to our newsletter for news and updates about our platform</p>
+                    <button className='btn' onClick={joinWaitList}> Join Waitlist</button>
 
+                </div>
+                <div className='img'>
+                    <img src={Phone} alt=''/>
+                </div>
             </div>
             
-       </section>
+        </section>
     );
 }
 export default IntroSection;

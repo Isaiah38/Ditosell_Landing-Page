@@ -42,6 +42,23 @@ nav{
 }
 
 /*-------------media queries-----------*/
+@media only screen and (max-width: 425px){
+    .nav-wrapper{
+        flex-direction: column;
+        margin-left: -200px;
+    }
+    .right-wrapper{
+        display: none;
+    }
+    .fabar{
+        display: inline;
+    }
+    .logo a img{
+        width: 70%;
+    }
+
+}
+
 @media only screen and (max-width: 360px){
     .nav-wrapper{
         flex-direction: column;

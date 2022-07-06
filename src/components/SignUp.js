@@ -1,8 +1,9 @@
+import '../style-module/Signup.css';
 import { useState } from "react";
 import { FaTimes } from "react-icons/fa";
 import axios from 'axios';
 
-function SignUp({name, closeSign}){
+function SignUp({show, closeSign}){
     const [formData, setFormData] = useState({
         firstName: '', email: ''
     })
@@ -21,7 +22,7 @@ function SignUp({name, closeSign}){
     }
     
 return (        
-            <div className='modal-background' id={name}>
+            <div className='modal-background' id={show}>
                 <div className='modal-box'>
                 <FaTimes className='close'onClick={() =>closeSign(false)}/>
                     <form id='join'>

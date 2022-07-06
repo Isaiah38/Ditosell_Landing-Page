@@ -1,99 +1,71 @@
-
-.head-container{
+:root{
+    --border: 1px solid blue;
+}
+.intro-wrapper{
+    color: white;
     display: flex;
-    color: #FFFFFF;
-    width: 92%;
+    flex-flow: wrap;
+    width: 90%;
     align-items: center;
+    padding: 2em 0 5em;
 }
-.head-content{
+.intro-content{
     width: 50%;
 }
-.head-content h1{
-    font-size: 2.5em;
+.intro-content h1{
+    font-size: 3em;
 }
-.pp{
+.intro-content p{
+    font-size: 1em;
     margin: 2em 0;
-    line-height: 2;
-    width: 500px;
+    color: #cfc6c6;
+    line-height: 1.5;
 }
-.image{
+.img{
     width: 50%;
 }
-.image img{
+.img img{
     width: 100%;
 }
-/*------------------------Join waitlist--------------------------*/
-.modal-background{
-    position: fixed;
-    top: -110%;
-    left:0; 
-    height: 100%;
-    width:100%;
-    z-index: 3;
-    background: rgba(0, 0, 0, 0.8);
-}
-#joinjoin{
-    top: 0;
-}
-.modal-box{
-    width: 250px;
-    margin: 10% auto;
-    background-color: #FFFFFF;
-    padding: 2em 2em 3em;
-    color: #000000;
-    text-align: center;
-    border-radius: 10px;
-}
-.modal-box input{
-    display: block;
-    box-sizing: border-box;
-    height: 2em;
-    width: 100%;
-    font-family: inherit;
-    border-radius: 10px;
-    margin-top: 1.5em;
-    outline: none;
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    padding: 0 2%;
-    width: 100%;
+/*-------------media queries-----------*/
+@media only screen and (max-width: 425px){
+    .intro-wrapper{
+        flex-direction: column;
+    }
+    .intro-content{
+        width: 100%;
+        text-align: center;
+        margin: 10% 0 10%;
+    }
+    .img{
+        width: 100%;
+    }
+    .intro-content h1{
+        font-size: 2em;
+    }
+    .intro-content p{
+        font-size: 1em;
+    }
 
-}
-
-#join h3{
-    margin: 2em 0; 
-}
-#join .btn{
-    background-color: #000000;
-    color: #FFFFFF;
-    margin-top: 2em;
-}
-.close{
-    cursor: pointer;
-    float: right;
 }
 /*-------------media queries-----------*/
 @media only screen and (max-width: 360px){
-    .head-container{
+    .intro-wrapper{
         flex-direction: column;
-        color: #FFFFFF;
-        width: 98%;
-        align-items: center;
     }
-    .head-content{
-        width: 300px;
-        font-size: .8em;
+    .intro-content{
+        width: 100%;
         text-align: center;
-        margin: 14% 0 14%;
+        margin: 10% 0 10%;
     }
-    .pp{
-        width: 300px;
+    .img{
+        width: 100%;
     }
-    .image{
-        width: 90%;
+    .intro-content h1{
+        font-size: 2em;
     }
-    .modal-box{
-        width: 300px;
-        border-radius: 5px;
+    .intro-content p{
+        font-size: 1em;
     }
 
 }
