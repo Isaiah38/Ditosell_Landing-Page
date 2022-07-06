@@ -3,7 +3,6 @@ import { FaTimes } from "react-icons/fa";
 import axios from 'axios';
 
 function SignUp({name, closeSign}){
-    const [signUpConfirm, setSignUpConfirm] = useState('')
     const [formData, setFormData] = useState({
         firstName: '', email: ''
     })
@@ -12,12 +11,13 @@ function SignUp({name, closeSign}){
             return{...prevFormData, [event.target.name]: event.target.value}
         })
     }
-    const waitlist = () =>{
-        axios.post({
+    const waitlist = (event) =>{
+        event.preventDefault();
+        axios.post('http://localhost:8000/join/waitlist', {
             method: 'post',
-            url: 'http://localhost:5000/waitlist',
             email: formData.email
-        }).then(Response => console.log(Response));
+        });
+
     }
     
 return (        

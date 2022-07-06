@@ -1,76 +1,26 @@
+
 .head-container{
     display: flex;
-    align-items: center;
-    padding: 1em 1em 2em;
-    max-height: min-content;
     color: #FFFFFF;
+    width: 92%;
+    align-items: center;
 }
 .head-content{
-    width: 100%;
-    flex:0 1 40em;
-    padding: 5% 0 0 5%;
-}
-.head-content div a img{
-    width: 9em;
+    width: 50%;
 }
 .head-content h1{
     font-size: 2.5em;
-    margin-bottom: 3%;
 }
-.head-content .pp{
-    font-size: 1em;
-    line-height: 1.5;
+.pp{
+    margin: 2em 0;
+    line-height: 2;
     width: 500px;
-    float: left;
-}
-.section-writeup{
-    color: #FFFFFF;
 }
 .image{
-    width: 80%;
-    flex: 0 1 40em;
-    padding: 0 5% 0 0;
+    width: 50%;
 }
 .image img{
     width: 100%;
-}
- .comingSoon{
-    margin-bottom: -2.5em;
-    margin-top: 5em;
- }
-.download-container{
-    display: grid;
-    background-color: transparent;
-    outline: none;
-    border: none;
-    width: 100%;
-    height: 150px;
-    justify-content: left;
-}
-.download-container .Applestore{
-    margin-top: -5em;
-    
-}
-.link-wrapper{
-    float: left;
-    display: inline-flex;
-    margin-right: -20em;
-    font-size: .9em;
-    display: none;
-}
-.link-wrapper a{
-    padding: .6em .5em .3em;
-    background-color: #FFFFFF;
-    border-radius: 50%;
-    color: #000000;
-    margin-right: 10px;
-}
-.email{
-    margin-top: 2em;
-}
-.email p a{
-    color: #FFFFFF;
-    text-decoration: underline;
 }
 /*------------------------Join waitlist--------------------------*/
 .modal-background{
@@ -86,7 +36,7 @@
     top: 0;
 }
 .modal-box{
-    width: 30%;
+    width: 250px;
     margin: 10% auto;
     background-color: #FFFFFF;
     padding: 2em 2em 3em;
@@ -100,19 +50,15 @@
     height: 2em;
     width: 100%;
     font-family: inherit;
-    background-color: #f1dbdb
-}
-.modal-box input{
-    display: block;
-    box-sizing: border-box;
-    height: 3em;
     border-radius: 10px;
     margin-top: 1.5em;
     outline: none;
     border: 1px solid rgba(0, 0, 0, 0.5);
     padding: 0 2%;
     width: 100%;
+
 }
+
 #join h3{
     margin: 2em 0; 
 }
@@ -125,10 +71,29 @@
     cursor: pointer;
     float: right;
 }
-.error{
-    color: red;
+/*-------------media queries-----------*/
+@media only screen and (max-width: 360px){
+    .head-container{
+        flex-direction: column;
+        color: #FFFFFF;
+        width: 98%;
+        align-items: center;
+    }
+    .head-content{
+        width: 300px;
+        font-size: .8em;
+        text-align: center;
+        margin: 14% 0 14%;
+    }
+    .pp{
+        width: 300px;
+    }
+    .image{
+        width: 90%;
+    }
+    .modal-box{
+        width: 300px;
+        border-radius: 5px;
+    }
+
 }
-.correct{
-    color: green;
-}
-/*-------------------------*/

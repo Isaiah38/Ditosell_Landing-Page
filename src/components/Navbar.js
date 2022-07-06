@@ -1,26 +1,28 @@
 import '../style-module/Navbar.css';
 import Logo from '../images/logo.svg';
-import { FaInstagramSquare } from "react-icons/fa";
-import { FaFacebookF } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
+import {FaBars} from 'react-icons/fa';
 
 function Navbar(){
     return(
 
-        <nav className='navbar'>
-
-            <div className="logo">
+        <nav>
+            <div className='nav-wrapper'>
+                <div className="logo">
                 <a href="ditosell.com"><img src={Logo} alt=''/></a>
+                </div>
+
+                <div className='right-wrapper'>
+                    <dv className='right-con'>
+                        <input type='text' placeholder='Email Address'/>
+                        <span>Subscribe</span>
+                    </dv>
+                </div>
+                <FaBars className='fabar'/>
+
             </div>
-            <div className="menu">
-                <ul className="menu-wrapper">
-                    <li><a href="#"><FaFacebookF/></a></li>
-                    <li><a href="#"><FaLinkedinIn/></a></li>
-                    <li><a href="#"><FaTwitter/></a></li>
-                    <li><a href="#"><FaInstagramSquare/></a></li>
-                </ul>
-            </div>
+
+            
+            
         </nav>
     )
 
