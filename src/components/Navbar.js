@@ -12,10 +12,10 @@ function Navbar(){
                 </div>
 
                 <div className='right-wrapper'>
-                    <dv className='right-con'>
+                    <div className='right-con'>
                         <input type='text' placeholder='Email Address'/>
                         <span>Subscribe</span>
-                    </dv>
+                    </div>
                 </div>
                 <FaBars className='fabar'/>
 

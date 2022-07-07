@@ -7,25 +7,29 @@ function SignUp({show, closeSign}){
     const [formData, setFormData] = useState({
         firstName: '', email: ''
     })
+    const register = (event) => {
+        event.preventDefault();
+        axios({
+            method: 'post',
+            url: 'http://localhost:3001/register',
+            data: {email: formData.email}
+        }).then((response) => {
+            console.log(response);
+        }).catch((error) => {
+            console.log(error);
+        })
+
+    }
     function handleChange(event){
         setFormData(prevFormData => {
             return{...prevFormData, [event.target.name]: event.target.value}
         })
     }
-    const waitlist = (event) =>{
-        event.preventDefault();
-        axios.post('http://localhost:8000/join/waitlist', {
-            method: 'post',
-            email: formData.email
-        });
-
-    }
-    
 return (        
             <div className='modal-background' id={show}>
                 <div className='modal-box'>
                 <FaTimes className='close'onClick={() =>closeSign(false)}/>
-                    <form id='join'>
+                    <form  id='join' onSubmit={register}>
                         <h3>Join the Waitlist</h3>
                         
                         <input type='email'
@@ -35,7 +39,7 @@ return (
                         value={formData.email}
                         onChange={handleChange}
                         />
-                        <button className='btn' onClick={waitlist}>Join</button>
+                        <button className='btn'>Join</button>
                     </form>
                 </div>
             </div>
